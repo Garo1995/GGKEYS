@@ -1,0 +1,265 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 34, 58, 0.75);
+    overflow: auto;
+    -webkit-transform: scaleY(0.01) scaleX(0);
+    -ms-transform: scaleY(0.01) scaleX(0);
+    transform: scaleY(0.01) scaleX(0);
+    -webkit-animation: unfoldIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: unfoldIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+.modal.out {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation: unfoldOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: unfoldOut 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@-webkit-keyframes unfoldIn {
+    0% {
+        -webkit-transform: scaleY(0.005) scaleX(0);
+        transform: scaleY(0.005) scaleX(0);
+    }
+    50% {
+        -webkit-transform: scaleY(0.005) scaleX(1);
+        transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+        -webkit-transform: scaleY(1) scaleX(1);
+        transform: scaleY(1) scaleX(1);
+    }
+}
+@keyframes unfoldIn {
+    0% {
+        -webkit-transform: scaleY(0.005) scaleX(0);
+        transform: scaleY(0.005) scaleX(0);
+    }
+    50% {
+        -webkit-transform: scaleY(0.005) scaleX(1);
+        transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+        -webkit-transform: scaleY(1) scaleX(1);
+        transform: scaleY(1) scaleX(1);
+    }
+}
+@-webkit-keyframes unfoldOut {
+    0% {
+        -webkit-transform: scaleY(1) scaleX(1);
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        -webkit-transform: scaleY(0.005) scaleX(1);
+        transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+        -webkit-transform: scaleY(0.005) scaleX(0);
+        transform: scaleY(0.005) scaleX(0);
+    }
+}
+@keyframes unfoldOut {
+    0% {
+        -webkit-transform: scaleY(1) scaleX(1);
+        transform: scaleY(1) scaleX(1);
+    }
+    50% {
+        -webkit-transform: scaleY(0.005) scaleX(1);
+        transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+        -webkit-transform: scaleY(0.005) scaleX(0);
+        transform: scaleY(0.005) scaleX(0);
+    }
+}
+.modal-content {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-animation: zoomIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+    animation: zoomIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@-webkit-keyframes zoomIn {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@keyframes zoomIn {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    z-index: 99;
+    transition: 0.3s;
+}
+.close:before,
+.close:after{
+    content: "";
+    position: absolute;
+    background-color: #087EEA;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 0.3s;
+}
+.close:before{
+    width: 70%;
+    height: 2px;
+}
+.close:after{
+    width: 2px;
+    height: 70%;
+}
+.close:hover:before,
+.close:hover:after{
+    background: #032F56;
+}
+.modal-registration{
+    max-width: 415px;
+    width: 100%;
+    padding: 40px 36px;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.modal-registration h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+    color: #032F56;
+    margin-bottom: 20px;
+}
+.modal-registration .embedding__inp>label>input {
+    padding: 10px 35px;
+    height: 44px;
+}
+.modal-registration .embedding__inp {
+    margin-top: 10px;
+}
+.modal-registration .embedding__inp p {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2D3032;
+    margin-bottom: 10px;
+}
+.embedding__inp label textarea{
+    padding: 10px 15px 10px 35px;
+    gap: 10px;
+    width: 100%;
+    height: 84px;
+    background: #FFFFFF;
+    border: 1px solid #B5C6D5;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2D3032;
+    font-family: 'Cera Pro';
+}
+.embedding__inp label textarea::placeholder{
+    font-family: 'Cera Pro';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ACB3B9;
+}
+.modal-registration .embedding__inp label{
+    margin-top: 10px;
+}
+.modal-registration  .become-partner {
+    margin: 15px auto;
+}
+.modal-registration .checkcontainer {
+    color: #ACB3B9;
+    margin: 10px auto 0;
+    max-width: 277px;
+    width: 100%;
+}
+.modal-registration .checkmark {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ACB3B9;
+    border-radius: 2px;
+}
+.modal-registration .checkcontainer .checkmark:after {
+    border: solid #ACB3B9;
+    border-width: 0 1px 1px 0;
+    top: 1px;
+    left: 5px;
+}
+.modal-registration  .check-radio {
+    color: #032F56;
+    width: auto;
+}
+.modal-registration .check-radio .checkmark {
+    border: 1px solid #B5C6D5;
+
+}
+.modal-registration .inst-sell__fl {
+    margin-top: 0;
+}
+#order .modal-registration {
+    max-width: 488px;
+}
+#application .modal-registration h2 {
+    margin-bottom: 0;
+}
+#application .modal-registration:after{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    right: -26px;
+    background-image: url("../img/co4.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 89px;
+    height: 65px;
+}
+@media (max-width: 760px){
+    #application .modal-registration:after{
+     display: none;
+    }
+}
+@media (max-width: 570px){
+    .modal-registration {
+        padding: 35px 15px 20px;
+    }
+}

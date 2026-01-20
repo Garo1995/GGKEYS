@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header__main">
+            <a href="#" class="header__logo">
+                <img src="assets/img/logo.png" alt="png" class="logo-dec">
+                <img src="assets/img/logo-mob.png" alt="png" class="logo-mob">
+            </a>
+            <div class="header__form">
+                <form>
+                    <label>
+                        <input type="text" placeholder="Поиск среди 12 078 товаров">
+                        <button class="search__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                 fill="none">
+                                <path d="M19.361 18.2168L14.601 13.2662C15.8249 11.8113 16.4954 9.98069 16.4954 8.07499C16.4954 3.62251 12.8729 0 8.42045 0C3.96797 0 0.345459 3.62251 0.345459 8.07499C0.345459 12.5275 3.96797 16.15 8.42045 16.15C10.092 16.15 11.6849 15.6458 13.0467 14.6888L17.8429 19.677C18.0434 19.8852 18.313 20 18.602 20C18.8755 20 19.1349 19.8957 19.3319 19.7061C19.7504 19.3034 19.7637 18.6357 19.361 18.2168ZM8.42045 2.10652C11.7115 2.10652 14.3889 4.78391 14.3889 8.07499C14.3889 11.3661 11.7115 14.0435 8.42045 14.0435C5.12937 14.0435 2.45198 11.3661 2.45198 8.07499C2.45198 4.78391 5.12937 2.10652 8.42045 2.10652Z"
+                                      fill="#032F56"/>
+                            </svg>
+                        </button>
+                    </label>
+                </form>
+            </div>
+            <div class="header__er">
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="for-mobile-bg"></div>
+                <div class="menu-cnt mobile-bg-1">
+                    <div class="sidenav">
+                        <div class="sidenav__item">
+                            <div class="btn-purchases__flex">
+                                <a href="#" class="btn-purchases">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                         fill="none">
+                                        <g clip-path="url(#clip0_6_89)">
+                                            <path d="M9.72656 19.3948H25.6057C25.9989 19.3948 26.3438 19.1348 26.4503 18.7571L29.9661 6.45218C30.0417 6.1869 29.9899 5.90195 29.8235 5.68153C29.6569 5.46181 29.3978 5.33203 29.1213 5.33203H7.69753L7.06924 2.50488C6.97998 2.10228 6.62293 1.81641 6.21094 1.81641H0.878906C0.393219 1.81641 0 2.20963 0 2.69531C0 3.18123 0.393219 3.57422 0.878906 3.57422H5.50552L8.67943 17.8564C7.74559 18.2625 7.08984 19.192 7.08984 20.2737C7.08984 21.7275 8.27271 22.9104 9.72656 22.9104H25.6057C26.0916 22.9104 26.4846 22.5174 26.4846 22.0315C26.4846 21.5458 26.0916 21.1526 25.6057 21.1526H9.72656C9.24248 21.1526 8.84766 20.7587 8.84766 20.2737C8.84766 19.7887 9.24248 19.3948 9.72656 19.3948Z"
+                                                  fill="black"/>
+                                            <path d="M8.84766 25.5471C8.84766 27.0012 10.0305 28.1838 11.4846 28.1838C12.9385 28.1838 14.1213 27.0012 14.1213 25.5471C14.1213 24.0933 12.9385 22.9104 11.4846 22.9104C10.0305 22.9104 8.84766 24.0933 8.84766 25.5471Z"
+                                                  fill="black"/>
+                                            <path d="M21.2112 25.5471C21.2112 27.0012 22.394 28.1838 23.8479 28.1838C25.302 28.1838 26.4846 27.0012 26.4846 25.5471C26.4846 24.0933 25.302 22.9104 23.8479 22.9104C22.394 22.9104 21.2112 24.0933 21.2112 25.5471Z"
+                                                  fill="black"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_89">
+                                                <rect width="30" height="30" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span>Мои покупки</span>
+                                </a>
+                                <a href="#" class="btn-purchases">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                         fill="none">
+                                        <path d="M16.4993 32.2082C17.0886 33.0183 18.2669 33.0182 18.856 32.2082C20.2186 30.4037 20.8814 28.268 20.8812 26.1322H14.4738C14.4739 28.2681 15.1367 30.4038 16.4994 32.2084L16.4993 32.2082Z"
+                                              fill="black"/>
+                                        <path d="M18.7455 1.60706C18.1932 0.980959 17.162 0.981084 16.6098 1.60706C12.6694 5.91558 10.6072 11.2185 10.5338 16.5948C7.99288 18.031 5.15731 21.161 6.85128 25.0644C8.02974 24.4016 9.61311 23.7755 11.4544 23.4073C11.4912 23.5178 11.5282 23.6283 11.5649 23.7387C11.749 24.3647 12.3382 24.733 12.9273 24.733L22.428 24.733C23.0909 24.733 23.6432 24.3278 23.7904 23.7387C23.8272 23.6283 23.8642 23.5178 23.9009 23.4073C25.7421 23.7756 27.3256 24.4016 28.5041 25.0644C30.1243 21.0138 27.3625 18.031 24.8216 16.5948C24.748 11.2185 22.686 5.91552 18.7455 1.60706ZM14.6582 10.0398C14.6582 8.346 15.9839 7.02032 17.6779 7.02019C19.3717 7.02019 20.6974 8.34587 20.6975 10.0398C20.6975 11.7337 19.3718 13.0594 17.6779 13.0595C15.9838 13.0595 14.6581 11.6601 14.6582 10.0398Z"
+                                              fill="black"/>
+                                    </svg>
+                                    <span>Начать продавать</span>
+                                </a>
+                            </div>
+                            <div class="header__item">
+                                <div class="header-flag">
+                                    <strong><img src="assets/img/ru.svg" alt="png"><span>RU</span></strong>
+                                    <div class="header-flag-droup">
+                                        <ul>
+                                            <li><a href="#"><img src="assets/img/bn.svg" alt="png"><span>BN</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/en.svg" alt="png"><span>EN</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/tr.svg" alt="png"><span>TR</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/de.svg" alt="png"><span>DE</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/it.svg" alt="png"><span>IT</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/pt.svg" alt="png"><span>PT</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/nl.svg" alt="png"><span>NL</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/es.svg" alt="png"><span>ES</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/zn.svg" alt="png"><span>ZH</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/fr.svg" alt="png"><span>FR</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/no.svg" alt="png"><span>NO</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/cs.svg" alt="png"><span>CS</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/pl.svg" alt="png"><span>PL</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/sv.svg" alt="png"><span>SV</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/et.svg" alt="png"><span>ET</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/lv.svg" alt="png"><span>LV</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/uk.svg" alt="png"><span>UK</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/kk.svg" alt="png"><span>KK</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/ky.svg" alt="png"><span>KY</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/be.svg" alt="png"><span>BE</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/ja.svg" alt="png"><span>JA</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/lt.svg" alt="png"><span>LT</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/ms.svg" alt="png"><span>MS</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/hi.svg" alt="png"><span>HI</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/ar.svg" alt="png"><span>AR</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/ko.svg" alt="png"><span>KO</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/id.svg" alt="png"><span>ID</span></a>
+                                            </li>
+                                            <li><a href="#"><img src="assets/img/tn.svg" alt="png"><span>TH</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-leng">
+                                    <strong>₽</strong>
+                                    <div class="header-leng-droup">
+                                        <ul>
+                                            <li><a href="#">$</a></li>
+                                            <li><a href="#">€</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__info">
+                            <div class="header__menu">
+                                <ul>
+                                    <li><a href="#"><img src="assets/img/xbox.svg" alt=""><span>Xbox</span></a></li>
+                                    <li><a href="#"><img src="assets/img/origin.svg" alt=""><span>Origin</span></a></li>
+                                    <li><a href="#"><img src="assets/img/microsoft.svg" alt=""><span>Microsoft</span></a></li>
+                                    <li><a href="#"><img src="assets/img/antivirus.svg" alt=""><span>Антивирус</span></a></li>
+                                    <li><a href="#"><img src="assets/img/kaspersky.svg" alt=""><span>Kaspersky</span></a></li>
+                                    <li><a href="#"><img src="assets/img/uplay.svg" alt=""><span>Uplay</span></a></li>
+                                    <li><a href="#"><img src="assets/img/pinterest.svg" alt=""><span>Pinterest</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__dr">
+            <div class="header__info">
+                <div class="header__dr">
+                    <a href="#" class="open-score">
+                        <img src="assets/img/joystick.svg" alt="">
+                        <span>Магазин</span>
+                    </a>
+                    <a href="#" class="all-games">
+                        <img src="assets/img/game.svg" alt="">
+                        <span>Все игры</span>
+                    </a>
+                </div>
+                <div class="header__menu">
+                    <ul>
+                        <li><a href="#"><img src="assets/img/xbox.svg" alt=""><span>Xbox</span></a></li>
+                        <li><a href="#"><img src="assets/img/origin.svg" alt=""><span>Origin</span></a></li>
+                        <li><a href="#"><img src="assets/img/microsoft.svg" alt=""><span>Microsoft</span></a></li>
+                        <li><a href="#"><img src="assets/img/antivirus.svg" alt=""><span>Антивирус</span></a></li>
+                        <li><a href="#"><img src="assets/img/kaspersky.svg" alt=""><span>Kaspersky</span></a></li>
+                        <li><a href="#"><img src="assets/img/uplay.svg" alt=""><span>Uplay</span></a></li>
+                        <li><a href="#"><img src="assets/img/pinterest.svg" alt=""><span>Pinterest</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dorup__menu">
+                <div class="dorup__menu__flex">
+                    <div class="dorup-menu__href">
+                        <strong>СЕРВИСЫ</strong>
+                        <ul>
+                            <li><a href="#"><img src="assets/img/xbox.svg" alt=""><span>Xbox</span></a></li>
+                            <li><a href="#"><img src="assets/img/origin.svg" alt=""><span>Origin</span></a></li>
+                            <li><a href="#"><img src="assets/img/microsoft.svg" alt=""><span>Microsoft</span></a></li>
+                            <li><a href="#"><img src="assets/img/antivirus.svg" alt=""><span>Антивирус</span></a></li>
+                            <li><a href="#"><img src="assets/img/kaspersky.svg" alt=""><span>Kaspersky</span></a></li>
+                            <li><a href="#"><img src="assets/img/uplay.svg" alt=""><span>Uplay</span></a></li>
+                            <li><a href="#"><img src="assets/img/pinterest.svg" alt=""><span>Pinterest</span></a></li>
+                            <li><a href="#"><img src="assets/img/xbox.svg" alt=""><span>Xbox</span></a></li>
+                            <li><a href="#"><img src="assets/img/origin.svg" alt=""><span>Origin</span></a></li>
+                            <li><a href="#"><img src="assets/img/microsoft.svg" alt=""><span>Microsoft</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="dorup-menu__href">
+                        <div class="for-small__sp">
+                            <strong>НОВИНКИ</strong>
+                            <span>NEW</span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="assets/img/xbox.svg" alt=""><span>Xbox</span></a></li>
+                            <li><a href="#"><img src="assets/img/origin.svg" alt=""><span>Origin</span></a></li>
+                            <li><a href="#"><img src="assets/img/microsoft.svg" alt=""><span>Microsoft</span></a></li>
+                            <li><a href="#"><img src="assets/img/antivirus.svg" alt=""><span>Антивирус</span></a></li>
+                            <li><a href="#"><img src="assets/img/kaspersky.svg" alt=""><span>Kaspersky</span></a></li>
+                            <li><a href="#"><img src="assets/img/uplay.svg" alt=""><span>Uplay</span></a></li>
+                            <li><a href="#"><img src="assets/img/pinterest.svg" alt=""><span>Pinterest</span></a></li>
+                            <li><a href="#"><img src="assets/img/xbox.svg" alt=""><span>Xbox</span></a></li>
+                            <li><a href="#"><img src="assets/img/origin.svg" alt=""><span>Origin</span></a></li>
+                            <li><a href="#"><img src="assets/img/microsoft.svg" alt=""><span>Microsoft</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="abc-games">
+                        <strong>ИГРЫ ПО АЛФАВИТУ</strong>
+                        <ul>
+                            <li><a href="#">A</a></li>
+                            <li><a href="#">B</a></li>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">D</a></li>
+                            <li><a href="#">G</a></li>
+                            <li><a href="#">H</a></li>
+                            <li><a href="#">i</a></li>
+                            <li><a href="#">J</a></li>
+                            <li><a href="#">K</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">N</a></li>
+                            <li><a href="#">O</a></li>
+                            <li><a href="#">P</a></li>
+                            <li><a href="#">Q</a></li>
+                            <li><a href="#">R</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">T</a></li>
+                            <li><a href="#">U</a></li>
+                            <li><a href="#">V</a></li>
+                            <li><a href="#">W</a></li>
+                            <li><a href="#">X</a></li>
+                            <li><a href="#">Y</a></li>
+                            <li><a href="#">Z</a></li>
+                            <li><a href="#">Б</a></li>
+                            <li><a href="#">В</a></li>
+                            <li><a href="#">Г</a></li>
+                            <li><a href="#">Д</a></li>
+                            <li><a href="#">И</a></li>
+                            <li><a href="#">К</a></li>
+                            <li><a href="#">Л</a></li>
+                            <li><a href="#">М</a></li>
+                            <li><a href="#">Н</a></li>
+                            <li><a href="#">О</a></li>
+                            <li><a href="#">П</a></li>
+                            <li><a href="#">Р</a></li>
+                            <li><a href="#">С</a></li>
+                            <li><a href="#">Т</a></li>
+                            <li><a href="#">У</a></li>
+                            <li><a href="#">Ф</a></li>
+                            <li><a href="#">Ц</a></li>
+                            <li><a href="#">Э</a></li>
+                            <li><a href="#">Ю</a></li>
+                            <li><a href="#">Я</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                        </ul>
+                    </div>
+                    <div class="popular-order">
+                        <div class="popular-order__href">
+                            <div class="for-small__sp">
+                                <strong>ПОПУЛЯРНОЕ</strong>
+                                <span>TOP</span>
+                            </div>
+                            <ul>
+                                <li><a href="#">Far Cry 6</a></li>
+                                <li><a href="#">FIFA 22</a></li>
+                                <li><a href="#">Google Ads</a></li>
+                                <li><a href="#">GTA 5</a></li>
+                                <li><a href="#">Яндекс Директ</a></li>
+                                <li><a href="#">Случайные аккаунты (Испытай удачу)</a></li>
+                                <li><a href="#">Случайные ключи (Испытай удачу)</a></li>
+                                <li><a href="#">PlayStation Network</a></li>
+                            </ul>
+                        </div>
+                        <div class="popular-order__href">
+                            <strong>ПРЕДЗАКАЗ</strong>
+                            <ul>
+                                <li><a href="#">GTA 5</a></li>
+                                <li><a href="#">Яндекс Директ</a></li>
+                                <li><a href="#">PlayStation Network</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="showcase__fon">
+        <div class="container">
+            <div class="bread-crumbs">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Сервис и соцсети</a></li>
+                    <li>Netflix</li>
+                </ul>
+            </div>
+            <div class="subscription product__pag">
+                <div class="showcase__cnt">
+                    <h1>Купить аккаунт Netflix Premium UHD 4K + Автопродление с гарантией ✅</h1>
+                    <div class="pag-product__see">
+                        <div class="pag-product__photo">
+                            <img src="assets/img/re26.jpg" alt="">
+                        </div>
+                        <div class="pag-product__basket">
+                            <a href="#" class="pag-product__arr">
+                                <div class="pag-prod__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 30 30" fill="none">
+                                        <g clip-path="url(#clip0_6_89)">
+                                            <path d="M9.72656 19.3948H25.6057C25.9989 19.3948 26.3438 19.1348 26.4503 18.7571L29.9661 6.45218C30.0417 6.1869 29.9899 5.90195 29.8235 5.68153C29.6569 5.46181 29.3978 5.33203 29.1213 5.33203H7.69753L7.06924 2.50488C6.97998 2.10228 6.62293 1.81641 6.21094 1.81641H0.878906C0.393219 1.81641 0 2.20963 0 2.69531C0 3.18123 0.393219 3.57422 0.878906 3.57422H5.50552L8.67943 17.8564C7.74559 18.2625 7.08984 19.192 7.08984 20.2737C7.08984 21.7275 8.27271 22.9104 9.72656 22.9104H25.6057C26.0916 22.9104 26.4846 22.5174 26.4846 22.0315C26.4846 21.5458 26.0916 21.1526 25.6057 21.1526H9.72656C9.24248 21.1526 8.84766 20.7587 8.84766 20.2737C8.84766 19.7887 9.24248 19.3948 9.72656 19.3948Z" fill="white"/>
+                                            <path d="M8.84766 25.5471C8.84766 27.0012 10.0305 28.1838 11.4846 28.1838C12.9385 28.1838 14.1213 27.0012 14.1213 25.5471C14.1213 24.0933 12.9385 22.9104 11.4846 22.9104C10.0305 22.9104 8.84766 24.0933 8.84766 25.5471Z" fill="white"/>
+                                            <path d="M21.2112 25.5471C21.2112 27.0012 22.394 28.1838 23.8479 28.1838C25.302 28.1838 26.4846 27.0012 26.4846 25.5471C26.4846 24.0933 25.302 22.9104 23.8479 22.9104C22.394 22.9104 21.2112 24.0933 21.2112 25.5471Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_6_89">
+                                                <rect width="20" height="17" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <span>229 отзывов</span>
+                            </a>
+                            <div class="produc-see">
+                                <div class="pag-prod__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" fill="none">
+                                        <path d="M13.749 10.2255C12.7545 11.2019 11.4087 11.7369 10.0153 11.7094H8.86136C8.73246 11.701 8.60691 11.7526 8.5214 11.8495C7.65552 12.7614 6.78154 13.6673 5.92152 14.5753V14.5751C5.75887 14.767 5.52101 14.8787 5.26949 14.8812C5.05955 14.8808 4.85852 14.7956 4.71221 14.645C4.56573 14.4945 4.48622 14.2913 4.49166 14.0812V11.8153C4.49166 11.6713 4.45162 11.6152 4.3057 11.5873C2.17387 11.0394 0.873849 9.64939 0.242031 7.58759V7.58773C0.140895 7.19811 0.0601212 6.8036 0 6.40573V5.3098C0.0385012 4.96091 0.105461 4.61578 0.200045 4.2778C0.721905 2.38199 1.84587 1.00804 3.71782 0.294119C4.25586 0.0946348 4.82586 -0.00496968 5.39965 0.000190712H9.9215C12.0253 -0.0098533 13.5991 0.926061 14.6791 2.67999C15.3893 3.86084 15.6836 5.24554 15.5149 6.61295C15.3464 7.98062 14.7248 9.25229 13.7492 10.2256L13.749 10.2255Z" fill="white"/>
+                                        <path d="M18.5063 7.28179C17.9508 6.78211 17.2651 6.44995 16.5285 6.32385C16.5285 6.37784 16.5146 6.40978 16.5105 6.43978V6.43992C16.4438 7.40511 16.1711 8.3448 15.7106 9.19574C14.4747 11.4356 12.6009 12.6595 10.0031 12.6915H9.18119C8.95715 12.6915 8.85727 12.8635 8.97124 13.0494C9.60317 14.0813 10.4872 14.7873 11.6971 14.9973H11.6969C12.2203 15.0614 12.7476 15.0875 13.2748 15.0753C13.3977 15.0677 13.5173 15.1172 13.5989 15.2093C13.9508 15.5853 14.3109 15.9533 14.6668 16.3252C14.9407 16.6111 15.2128 16.9031 15.4947 17.185V17.1852C15.614 17.322 15.7826 17.406 15.9637 17.4187C16.1448 17.4314 16.3235 17.372 16.4607 17.2531C16.6284 17.1007 16.7163 16.8793 16.6987 16.6533V15.2294C16.6987 15.0593 16.7448 14.9994 16.9127 14.9355V14.9353C17.3273 14.8031 17.7247 14.6217 18.0965 14.3953C20.4524 12.7755 20.6584 9.19351 18.5065 7.28184L18.5063 7.28179Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <span>229 продаж</span>
+                            </div>
+                            <div class="produc-see">
+                                <div class="pag-prod__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
+                                        <path d="M11.5211 5.59887C11.5205 6.00217 11.3598 6.38879 11.0742 6.67371C10.7887 6.95861 10.4016 7.11831 9.99834 7.11801C9.59504 7.11758 9.20827 6.957 8.92335 6.67168C8.63831 6.38621 8.47831 5.9993 8.47846 5.59599C8.47874 5.19269 8.63904 4.80592 8.92434 4.52074C9.20953 4.23556 9.59643 4.07541 9.99974 4.07541C10.4036 4.07541 10.7908 4.23599 11.0762 4.52174C11.3616 4.8075 11.5217 5.19497 11.5211 5.59887H11.5211ZM19.785 6.20694C18.2669 8.2487 16.148 9.76439 13.7253 10.5417C11.3026 11.319 8.69733 11.319 6.27469 10.5417C3.85194 9.76428 1.73294 8.24855 0.214965 6.20694C0.0753939 6.02103 0 5.79483 0 5.56232C0 5.32982 0.0753975 5.10362 0.214965 4.91771C1.73312 2.87595 3.85198 1.36026 6.27469 0.582969C8.69744 -0.194323 11.3027 -0.194323 13.7253 0.582969C16.1481 1.36037 18.2671 2.8761 19.785 4.91771C19.9246 5.10361 20 5.32982 20 5.56232C20 5.79483 19.9246 6.02103 19.785 6.20694ZM13.7968 5.59887C13.7973 4.5918 13.3978 3.62576 12.686 2.91323C11.9743 2.20084 11.0085 1.80026 10.0015 1.79996C8.9944 1.79953 8.02837 2.19925 7.31613 2.9112C6.60374 3.62315 6.20345 4.58892 6.20331 5.59599C6.20302 6.60306 6.60304 7.56895 7.31513 8.28119C8.02708 8.99328 8.993 9.39342 10.0001 9.39342C11.0063 9.39227 11.971 8.99225 12.6828 8.2809C13.3945 7.56954 13.7951 6.60505 13.7968 5.59887H13.7968Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <span>47150 просмотров</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-cnt__buy">
+                    <div class="showcase__flex">
+                        <div class="showcase__price">
+                            <del>599 ₽ </del>
+                            <span class="showcase__skid">-83%</span>
+                            <strong>79 ₽ </strong>
+                        </div>
+                        <div class="showcase__block">
+                            <a href="#" class="btn__buy">
+                                <span>Купить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                    <g clip-path="url(#clip0_6_89)">
+                                        <path d="M9.72656 19.3948H25.6057C25.9989 19.3948 26.3438 19.1348 26.4503 18.7571L29.9661 6.45218C30.0417 6.1869 29.9899 5.90195 29.8235 5.68153C29.6569 5.46181 29.3978 5.33203 29.1213 5.33203H7.69753L7.06924 2.50488C6.97998 2.10228 6.62293 1.81641 6.21094 1.81641H0.878906C0.393219 1.81641 0 2.20963 0 2.69531C0 3.18123 0.393219 3.57422 0.878906 3.57422H5.50552L8.67943 17.8564C7.74559 18.2625 7.08984 19.192 7.08984 20.2737C7.08984 21.7275 8.27271 22.9104 9.72656 22.9104H25.6057C26.0916 22.9104 26.4846 22.5174 26.4846 22.0315C26.4846 21.5458 26.0916 21.1526 25.6057 21.1526H9.72656C9.24248 21.1526 8.84766 20.7587 8.84766 20.2737C8.84766 19.7887 9.24248 19.3948 9.72656 19.3948Z" fill="black"/>
+                                        <path d="M8.84766 25.5471C8.84766 27.0012 10.0305 28.1838 11.4846 28.1838C12.9385 28.1838 14.1213 27.0012 14.1213 25.5471C14.1213 24.0933 12.9385 22.9104 11.4846 22.9104C10.0305 22.9104 8.84766 24.0933 8.84766 25.5471Z" fill="black"/>
+                                        <path d="M21.2112 25.5471C21.2112 27.0012 22.394 28.1838 23.8479 28.1838C25.302 28.1838 26.4846 27.0012 26.4846 25.5471C26.4846 24.0933 25.302 22.9104 23.8479 22.9104C22.394 22.9104 21.2112 24.0933 21.2112 25.5471Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6_89">
+                                            <rect width="30" height="30" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <label class="checkcontainer">
+                                Согласен с <a href="#">правилами покупки товаров</a>
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="until-promotion">
+                        <div class="until__icon">
+                            <img src="assets/img/sale_circle.png" alt="">
+                            <span>до конца акции</span>
+                        </div>
+                        <div class="until__flex">
+                            <div class="until__data">
+                                <strong id="hour">00</strong>
+                                <span>часов</span>
+                            </div>
+                            <div class="until__data">
+                                <strong id="minutes">00</strong>
+                                <span>минут</span>
+                            </div>
+                            <div class="until__data">
+                                <strong id="seconds">00</strong>
+                                <span>секунд</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-score">
+                        <img src="assets/img/money.svg" alt="">
+                        <span>Как заработать <br> <b>18.78 ₽</b> на этом товаре?</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="pag-product__main">
+            <div class="pag-product__info">
+                <div class="pag-product__btn">
+                    <a href="#" class="btn-score pag-btn__grey">
+                        <img src="assets/img/info-duct.svg" alt="">
+                        <div class="earn-cnt__name">
+                            <p>Продавец</p>
+                            <span>Dimikeys</span>
+                        </div>
+                    </a>
+                    <a href="#" class="btn-score pag-btn__or">
+                        <img src="assets/img/cate-product.svg" alt="">
+                        <div class="earn-cnt__name">
+                            <p>Webmoney</p>
+                            <span>Сертификат</span>
+                        </div>
+                    </a>
+                    <a href="#" class="btn-score pag-btn__green">
+                        <img src="assets/img/product24.svg" alt="">
+                        <div class="earn-cnt__name">
+                            <p>Все товары продавца</p>
+                            <span>Посмотрите</span>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="instant-ceive__flex">
+                    <div class="seller__ret">
+                        <img src="assets/img/icon-pro.svg" alt="">
+                        <div class="seller__on">
+                            <p>Рейтинг</p>
+                            <div class="seller__star">
+                                <ul>
+                                    <li><img src="assets/img/star.svg" alt=""></li>
+                                    <li><img src="assets/img/star.svg" alt=""></li>
+                                    <li><img src="assets/img/star.svg" alt=""></li>
+                                    <li><img src="assets/img/star.svg" alt=""></li>
+                                    <li><img src="assets/img/star.svg" alt=""></li>
+                                </ul>
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="instant-ceive__logo">
+                        <img src="assets/img/imag87.png" alt="">
+                    </div>
+                    <div class="instant-ceive__fl">
+                        <img src="assets/img/ranty-product.svg" alt="">
+                        <div class="instant-ceive__name">
+                            <p>Моментальное получение</p>
+                            <span>Гарантия сделки</span>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    По заявлению продавца этот аккаунт является собственностью продавца и получен
+                    легальным путем. Ответственность как за продажу аккаунта так и за возможное
+                    нарушение пользовательского соглашения с издателем лежит исключительно на продавце.
+                     Торговая площадка GGsel не допускает публикацию незаконного контента на страницах ресурса.
+                </p>
+            </div>
+            <div class="pag-seller-discount">
+                <div class="pag-seller__title">
+                    <strong>Скидка продавца</strong>
+                    <span>на все товары</span>
+                </div>
+                <p>На товар предоставляется скидка постоянным покупателям. Если общая сумма покупок у продавца Dimikeys больше чем</p>
+                <div class="pag-seller-disc">
+                    <div class="new-dsisplay-er">
+                        <strong>1000$</strong>
+                        <div class="new-dsisplay-drop">
+                            <ul>
+                                <li>2000$</li>
+                                <li>3000$</li>
+                                <li>4000$</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pag-seller-ount">
+                        <strong>Скидка 12%</strong>
+                        <img src="assets/img/sale_circle.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="product-description">
+                <h1>Описание товара</h1>
+                <p> Получите аккаунт Netflix с подпиской Premium, моментальной доставкой и гарантией!</p>
+                <ul>
+                    <li>☑️ ПРЕИМУЩЕСТВА ☑️</li>
+                    <li>✅ 1 месяц гарантии;</li>
+                    <li>✅ Автопродление;</li>
+                    <li>✅ Отсутствие рекламы на сайте; </li>
+                    <li>✅ Увеличенная скорость загрузки роликов;</li>
+                    <li>✅ Доступ к FULL HD/4K видео; </li>
+                    <li>✅ Огромная библиотека фильмов и сериалов;</li>
+                    <li>✅ Аккаунт будет доставлен моментально, где найти: http://bit.ly/2WzKyO5 </li>
+                </ul>
+                <span>🔴 ВАЖНО 🔴 ️</span>
+                <ul class="text__ket">
+                    <li>Аккаунт вида: логин:пароль Netflix (без доступа к почте); </li>
+                    <li>Нельзя менять пароль. Гарантия в этом случае аннулируется; </li>
+                    <li>Язык может быть любым, можно изменить в любом профиле кроме первого; </li>
+                    <li>Создавать и менять профили запрещено. Используйте любой, кроме первого;</li>
+                    <li>Гарантия только для розничных покупателей.  </li>
+                </ul>
+                <p>Что делать после покупки</p>
+                <ul class="text__ket">
+                    <li>Перейти на сайт https://www.netflix.com/</li>
+                    <li>Авторизоваться;</li>
+                    <li>Выбрать пользователя, кроме первого;</li>
+                    <li>Наслаждаться просмотром фильмов и сериалов.</li>
+                    <li>Для просмотра в России возможно потребуется VPN</li>
+                </ul>
+                <div class="mended-internet">
+                    <p>==============================</p>
+                    <p>Рекомендованная скорость интернета: </p>
+                    <p>Минимальная 0,5 Мбит/с</p>
+                    <p>Рекомендованная 1,5 Мбит/с </p>
+                    <p>Для SD 3,0 Мбит/с</p>
+                    <p>Для HD (720p и 1080p) 5,0 Мбит/с</p>
+                    <p>Для Ultra HD 4К (2160p) 25 Мбит/с</p>
+                </div>
+                <div class="information-addi">
+                    <h2>Дополнительная информация</h2>
+                    <p>⭐️ Наша группа: https://vk.com/dimikey_com (Ежедневно проводим раздачи ключей Steam)</p>
+                    <p>⭐️ Отзывы о нас: http://bit.ly/325UHTS</p>
+                    <p>
+                        🎁 После покупки Вы автоматически получаете промо-код на 10% скидку на новые покупки. Действует в течении недели на ЛЮБОЙ товар нашего магазина. Где его найти и как использовать: http://bit.ly/2pqgYP1
+                    </p>
+                    <div class="share-with-friends">
+                        <h2>Поделитесь с друзьями</h2>
+                        <a href="#">
+                            <img src="assets/img/vk2.svg" alt="">
+                            <span>Vkontakte</span>
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/fac.svg" alt="">
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/twitter.svg" alt="">
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recom-just">
+                <h1>Рекомендовано именно вам</h1>
+                <div class="recom-just__info">
+                    <div class="swiper recom-just__slid">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="sales__box">
+                                    <div class="sales__info">
+                                        <a href="#" class="sales__photo">
+                                            <span>-83%</span>
+                                            <img src="assets/img/picture1.jpg" alt="">
+                                        </a>
+                                        <div class="sales__premium">
+                                            <span>Surfshark Premium VPN 2022 - 2026🌎ГАРАНТИЯ🔥СКИДКИ</span>
+                                            <div class="sales__basket">
+                                                <p>Аккаунт</p>
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                                         fill="none">
+                                                        <g clip-path="url(#clip0_13_229)">
+                                                            <path d="M4.53906 9.05089H11.9493C12.1328 9.05089 12.2938 8.92955 12.3435 8.75331L13.9842 3.01102C14.0194 2.88722 13.9953 2.75424 13.9177 2.65138C13.8399 2.54884 13.719 2.48828 13.59 2.48828H3.59218L3.29898 1.16895C3.25732 0.981064 3.0907 0.847656 2.89844 0.847656H0.410156C0.183502 0.847656 0 1.03116 0 1.25781C0 1.48457 0.183502 1.66797 0.410156 1.66797H2.56924L4.0504 8.33301C3.61461 8.52249 3.30859 8.95625 3.30859 9.46104C3.30859 10.1395 3.8606 10.6915 4.53906 10.6915H11.9493C12.1761 10.6915 12.3595 10.5081 12.3595 10.2814C12.3595 10.0547 12.1761 9.8712 11.9493 9.8712H4.53906C4.31316 9.8712 4.12891 9.68738 4.12891 9.46104C4.12891 9.23471 4.31316 9.05089 4.53906 9.05089Z"
+                                                                  fill="#ACB3B9"/>
+                                                            <path d="M4.12891 11.922C4.12891 12.6006 4.68091 13.1525 5.35948 13.1525C6.03795 13.1525 6.58995 12.6006 6.58995 11.922C6.58995 11.2435 6.03795 10.6915 5.35948 10.6915C4.68091 10.6915 4.12891 11.2435 4.12891 11.922Z"
+                                                                  fill="#ACB3B9"/>
+                                                            <path d="M9.89856 11.922C9.89856 12.6006 10.4506 13.1525 11.129 13.1525C11.8076 13.1525 12.3595 12.6006 12.3595 11.922C12.3595 11.2435 11.8076 10.6915 11.129 10.6915C10.4506 10.6915 9.89856 11.2435 9.89856 11.922Z"
+                                                                  fill="#ACB3B9"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_13_229">
+                                                                <rect width="14" height="14" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <span>3256</span>
+                                                </a>
+                                            </div>
+                                            <div class="sales__item">
+                                                <div class="sales__price">
+                                                    <del>248 ₽</del>
+                                                    <strong>248 ₽</strong>
+                                                </div>
+                                                <a href="#" class="sales__cart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                                         fill="none">
+                                                        <g clip-path="url(#clip0_6_89)">
+                                                            <path d="M9.72656 19.3948H25.6057C25.9989 19.3948 26.3438 19.1348 26.4503 18.7571L29.9661 6.45218C30.0417 6.1869 29.9899 5.90195 29.8235 5.68153C29.6569 5.46181 29.3978 5.33203 29.1213 5.33203H7.69753L7.06924 2.50488C6.97998 2.10228 6.62293 1.81641 6.21094 1.81641H0.878906C0.393219 1.81641 0 2.20963 0 2.69531C0 3.18123 0.393219 3.57422 0.878906 3.57422H5.50552L8.67943 17.8564C7.74559 18.2625 7.08984 19.192 7.08984 20.2737C7.08984 21.7275 8.27271 22.9104 9.72656 22.9104H25.6057C26.0916 22.9104 26.4846 22.5174 26.4846 22.0315C26.4846 21.5458 26.0916 21.1526 25.6057 21.1526H9.72656C9.24248 21.1526 8.84766 20.7587 8.84766 20.2737C8.84766 19.7887 9.24248 19.3948 9.72656 19.3948Z"
+                                                                  fill="black"/>
+                                                            <path d="M8.84766 25.5471C8.84766 27.0012 10.0305 28.1838 11.4846 28.1838C12.9385 28.1838 14.1213 27.0012 14.1213 25.5471C14.1213 24.0933 12.9385 22.9104 11.4846 22.9104C10.0305 22.9104 8.84766 24.0933 8.84766 25.5471Z"
+                                                                  fill="black"/>
+                                                            <path d="M21.2112 25.5471C21.2112 27.0012 22.394 28.1838 23.8479 28.1838C25.302 28.1838 26.4846 27.0012 26.4846 25.5471C26.4846 24.0933 25.302 22.9104 23.8479 22.9104C22.394 22.9104 21.2112 24.0933 21.2112 25.5471Z"
+                                                                  fill="black"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_6_89">
+                                                                <rect width="30" height="30" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sales__box">
+                                    <div class="sales__info">
+                                        <a href="#" class="sales__photo">
+                                            <span>-83%</span>
+                                            <img src="assets/img/picture2.jpg" alt="">
+                                        </a>
+                                        <div class="sales__premium">
+                                            <span>Netflix Premium UHD 4K + Автопродление с гарантией ✅</span>
+                                            <div class="sales__basket">
+                                                <p>Аккаунт</p>
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                                         fill="none">
+                                                        <g clip-path="url(#clip0_13_229)">
+                                                            <path d="M4.53906 9.05089H11.9493C12.1328 9.05089 12.2938 8.92955 12.3435 8.75331L13.9842 3.01102C14.0194 2.88722 13.9953 2.75424 13.9177 2.65138C13.8399 2.54884 13.719 2.48828 13.59 2.48828H3.59218L3.29898 1.16895C3.25732 0.981064 3.0907 0.847656 2.89844 0.847656H0.410156C0.183502 0.847656 0 1.03116 0 1.25781C0 1.48457 0.183502 1.66797 0.410156 1.66797H2.56924L4.0504 8.33301C3.61461 8.52249 3.30859 8.95625 3.30859 9.46104C3.30859 10.1395 3.8606 10.6915 4.53906 10.6915H11.9493C12.1761 10.6915 12.3595 10.5081 12.3595 10.2814C12.3595 10.0547 12.1761 9.8712 11.9493 9.8712H4.53906C4.31316 9.8712 4.12891 9.68738 4.12891 9.46104C4.12891 9.23471 4.31316 9.05089 4.53906 9.05089Z"
+                                                                  fill="#ACB3B9"/>
+                                                            <path d="M4.12891 11.922C4.12891 12.6006 4.68091 13.1525 5.35948 13.1525C6.03795 13.1525 6.58995 12.6006 6.58995 11.922C6.58995 11.2435 6.03795 10.6915 5.35948 10.6915C4.68091 10.6915 4.12891 11.2435 4.12891 11.922Z"
+                                                                  fill="#ACB3B9"/>
+                                                            <path d="M9.89856 11.922C9.89856 12.6006 10.4506 13.1525 11.129 13.1525C11.8076 13.1525 12.3595 12.6006 12.3595 11.922C12.3595 11.2435 11.8076 10.6915 11.129 10.6915C10.4506 10.6915 9.89856 11.2435 9.89856 11.922Z"
+                                                                  fill="#ACB3B9"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_13_229">
+                                                                <rect width="14" height="14" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <span>3256</span>
+                                                </a>
+                                            </div>
+                                            <div class="sales__item">
+                                                <div class="sales__price">
+                                                    <del>248 ₽</del>
+                                                    <strong>248 ₽</strong>
+                                                </div>
+                                                <a href="#" class="sales__cart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                                         fill="none">
+                                                        <g clip-path="url(#clip0_6_89)">
+                                                            <path d="M9.72656 19.3948H25.6057C25.9989 19.3948 26.3438 19.1348 26.4503 18.7571L29.9661 6.45218C30.0417 6.1869 29.9899 5.90195 29.8235 5.68153C29.6569 5.46181 29.3978 5.33203 29.1213 5.33203H7.69753L7.06924 2.50488C6.97998 2.10228 6.62293 1.81641 6.21094 1.81641H0.878906C0.393219 1.81641 0 2.20963 0 2.69531C0 3.18123 0.393219 3.57422 0.878906 3.57422H5.50552L8.67943 17.8564C7.74559 18.2625 7.08984 19.192 7.08984 20.2737C7.08984 21.7275 8.27271 22.9104 9.72656 22.9104H25.6057C26.0916 22.9104 26.4846 22.5174 26.4846 22.0315C26.4846 21.5458 26.0916 21.1526 25.6057 21.1526H9.72656C9.24248 21.1526 8.84766 20.7587 8.84766 20.2737C8.84766 19.7887 9.24248 19.3948 9.72656 19.3948Z"
+                                                                  fill="black"/>
+                                                            <path d="M8.84766 25.5471C8.84766 27.0012 10.0305 28.1838 11.4846 28.1838C12.9385 28.1838 14.1213 27.0012 14.1213 25.5471C14.1213 24.0933 12.9385 22.9104 11.4846 22.9104C10.0305 22.9104 8.84766 24.0933 8.84766 25.5471Z"
+                                                                  fill="black"/>
+                                                            <path d="M21.2112 25.5471C21.2112 27.0012 22.394 28.1838 23.8479 28.1838C25.302 28.1838 26.4846 27.0012 26.4846 25.5471C26.4846 24.0933 25.302 22.9104 23.8479 22.9104C22.394 22.9104 21.2112 24.0933 21.2112 25.5471Z"
+                                                                  fill="black"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_6_89">
+                                                                <rect width="30" height="30" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="sales__box">
+                                    <div class="sales__info">
+                                        <a href="#" class="sales__photo">
+                                            <img src="assets/img/picture3.jpg" alt="">
+                                        </a>
+                                        <div class="sales__premium">
+                                            <span>👾DISCORD NITRO 3 МЕСЯЦА+2 BOOST+Карта🔥 </span>
+                                            <div class="sales__basket">
+                                                <p>Аккаунт</p>
+                                                <a href="#">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                                         fill="none">
+                                                        <g clip-path="url(#clip0_13_229)">
+                                                            <path d="M4.53906 9.05089H11.9493C12.1328 9.05089 12.2938 8.92955 12.3435 8.75331L13.9842 3.01102C14.0194 2.88722 13.9953 2.75424 13.9177 2.65138C13.8399 2.54884 13.719 2.48828 13.59 2.48828H3.59218L3.29898 1.16895C3.25732 0.981064 3.0907 0.847656 2.89844 0.847656H0.410156C0.183502 0.847656 0 1.03116 0 1.25781C0 1.48457 0.183502 1.66797 0.410156 1.66797H2.56924L4.0504 8.33301C3.61461 8.52249 3.30859 8.95625 3.30859 9.46104C3.30859 10.1395 3.8606 10.6915 4.53906 10.6915H11.9493C12.1761 10.6915 12.3595 10.5081 12.3595 10.2814C12.3595 10.0547 12.1761 9.8712 11.9493 9.8712H4.53906C4.31316 9.8712 4.12891 9.68738 4.12891 9.46104C4.12891 9.23471 4.31316 9.05089 4.53906 9.05089Z"
+                                                                  fill="#ACB3B9"/>
+                                                            <path d="M4.12891 11.922C4.12891 12.6006 4.68091 13.1525 5.35948 13.1525C6.03795 13.1525 6.58995 12.6006 6.58995 11.922C6.58995 11.2435 6.03795 10.6915 5.35948 10.6915C4.68091 10.6915 4.12891 11.2435 4.12891 11.922Z"
+                                                                  fill="#ACB3B9"/>
+                                                            <path d="M9.89856 11.922C9.89856 12.6006 10.4506 13.1525 11.129 13.1525C11.8076 13.1525 12.3595 12.6006 12.3595 11.922C12.3595 11.2435 11.8076 10.6915 11.129 10.6915C10.4506 10.6915 9.89856 11.2435 9.89856 11.922Z"
+                                                                  fill="#ACB3B9"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_13_229">
+                                                                <rect width="14" height="14" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <span>3256</span>
+                                                </a>
+                                            </div>
+                                            <div class="sales__item">
+                                                <div class="sales__price">
+                                                    <del>248 ₽</del>
+                                                    <strong>248 ₽</strong>
+                                                </div>
+                                                <a href="#" class="sales__cart">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                                         fill="none">
+                                                        <g clip-path="url(#clip0_6_89)">
+                                                            <path d="M9.72656 19.3948H25.6057C25.9989 19.3948 26.3438 19.1348 26.4503 18.7571L29.9661 6.45218C30.0417 6.1869 29.9899 5.90195 29.8235 5.68153C29.6569 5.46181 29.3978 5.33203 29.1213 5.33203H7.69753L7.06924 2.50488C6.97998 2.10228 6.62293 1.81641 6.21094 1.81641H0.878906C0.393219 1.81641 0 2.20963 0 2.69531C0 3.18123 0.393219 3.57422 0.878906 3.57422H5.50552L8.67943 17.8564C7.74559 18.2625 7.08984 19.192 7.08984 20.2737C7.08984 21.7275 8.27271 22.9104 9.72656 22.9104H25.6057C26.0916 22.9104 26.4846 22.5174 26.4846 22.0315C26.4846 21.5458 26.0916 21.1526 25.6057 21.1526H9.72656C9.24248 21.1526 8.84766 20.7587 8.84766 20.2737C8.84766 19.7887 9.24248 19.3948 9.72656 19.3948Z"
+                                                                  fill="black"/>
+                                                            <path d="M8.84766 25.5471C8.84766 27.0012 10.0305 28.1838 11.4846 28.1838C12.9385 28.1838 14.1213 27.0012 14.1213 25.5471C14.1213 24.0933 12.9385 22.9104 11.4846 22.9104C10.0305 22.9104 8.84766 24.0933 8.84766 25.5471Z"
+                                                                  fill="black"/>
+                                                            <path d="M21.2112 25.5471C21.2112 27.0012 22.394 28.1838 23.8479 28.1838C25.302 28.1838 26.4846 27.0012 26.4846 25.5471C26.4846 24.0933 25.302 22.9104 23.8479 22.9104C22.394 22.9104 21.2112 24.0933 21.2112 25.5471Z"
+                                                                  fill="black"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_6_89">
+                                                                <rect width="30" height="30" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="product-reviews">
+            <div class="product-reviews__tit">
+                <h2>Отзывы о товаре</h2>
+                <div class="seller__like">
+                    <div class="liner__green rev-lin">
+                        <img src="assets/img/like.svg" alt="">
+                    </div>
+                    <span>148</span>
+                    <div class="liner__red rev-lin">
+                        <img src="assets/img/dislike.svg" alt="">
+                    </div>
+                    <span>75</span>
+                </div>
+                <div class="product-persuasive">
+                    <img src="assets/img/info_icon.svg" alt="">
+                    <p>Убедительная просьба не ставить негативный отзыв до связи с продавцом</p>
+                </div>
+            </div>
+            <div class="prod-reviews__lin">
+                <div class="prod-reviews__re">
+                    <div class="prod-reviews__flex">
+                        <div class="prod-reviews__icon liner__green">
+                            <img src="assets/img/comments.svg" alt="">
+                        </div>
+                        <p>
+                            Password got changed after few hours , no warranty from seller , when account doesn´t
+                            work , you have to buy new one.
+                        </p>
+                    </div>
+                    <span>16.06.2022 07:41:04</span>
+                </div>
+            </div>
+            <div class="prod-reviews__lin">
+                <div class="prod-reviews__re">
+                    <div class="prod-reviews__flex">
+                        <div class="prod-reviews__icon liner__red">
+                            <img src="assets/img/comments-red.svg" alt="">
+                        </div>
+                        <p>
+                            С первого раза - ничего не работает как у 80% продавцов. Не советую
+                        </p>
+                    </div>
+                    <span>16.06.2022 07:41:04</span>
+                </div>
+                <p>Ответ продавца</p>
+                <span>Замена, приносим извинения за неудобства</span>
+            </div>
+            <div class="prod-reviews__lin">
+                <div class="prod-reviews__re">
+                    <div class="prod-reviews__flex">
+                        <div class="prod-reviews__icon liner__green">
+                            <img src="assets/img/comments.svg" alt="">
+                        </div>
+                        <p>
+                            Сначала дали аккаунт в который не мог войти, заменили, теперь всё работает, доволен. Рекомендую.
+                        </p>
+                    </div>
+                    <span>16.06.2022 07:41:04</span>
+                </div>
+            </div>
+            <div class="prod-reviews__lin">
+                <div class="prod-reviews__re">
+                    <div class="prod-reviews__flex">
+                        <div class="prod-reviews__icon liner__red">
+                            <img src="assets/img/comments-red.svg" alt="">
+                        </div>
+                        <p>
+                            Account stops working after few days , when i write to seller that account password
+                            changed , the answer is : Good afternoon.All data was in your hands.
+                        </p>
+                    </div>
+                    <span>16.06.2022 07:41:04</span>
+                </div>
+                <p>Ответ продавца</p>
+                <span>Замена, приносим извинения за неудобства</span>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer__main">
+            <div class="footer__flex">
+                <div class="footer__cnt">
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                    <div class="footer__soc">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/vk.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/instagram.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/tiktok.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/steam.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/Reddit.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/telegram.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/youtube.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/discord.svg" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="assets/img/facebook.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <strong>Информация</strong>
+                    <ul class="marg-ul">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Покупателю</a></li>
+                        <li><a href="#">Продавцу</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+                <div class="accept-payment">
+                    <strong>Принимаем к оплате</strong>
+                    <ul>
+                        <li><img src="assets/img/WebMoney.svg" alt=""></li>
+                        <li><img src="assets/img/Qiwi.svg" alt=""></li>
+                        <li><img src="assets/img/iomoney.svg" alt=""></li>
+                        <li><img src="assets/img/Mastercard.svg" alt=""></li>
+                        <li><img src="assets/img/steam24.svg" alt=""></li>
+                        <li><img src="assets/img/Bitcoin.svg" alt=""></li>
+                        <li><img src="assets/img/mts.svg" alt=""></li>
+                        <li><img src="assets/img/visa.svg" alt=""></li>
+                        <li><img src="assets/img/page-1.svg" alt=""></li>
+                        <li><img src="assets/img/tele2.svg" alt=""></li>
+                        <li><img src="assets/img/megafon.svg" alt=""></li>
+                        <li><img src="assets/img/Beeline.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-rights">
+                <a href="#"><span>Разработано веб-студией </span><img src="assets/img/dev-point1.png" alt=""></a>
+                <p>Copyright. Все права защищены 2022</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.mask.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

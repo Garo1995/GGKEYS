@@ -1,0 +1,204 @@
+.catalog__main{
+    margin: 40px 0 70px;
+    position: relative;
+}
+.catalog__main .open-score {
+    width: 100%;
+    max-width: 290px;
+    padding: 12px 18px;
+}
+
+.catalog__href ul{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+}
+.catalog__href ul .btn__liner{
+    padding: 8px 30px;
+}
+.catalog-all-games{
+    margin-top: 40px;
+}
+.catalog-games__tit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.catalog-games__tit .btn-score{
+    padding: 12px 30px;
+}
+.catalog-games__flex{
+    position: relative;
+}
+.games-letters{
+    position: absolute;
+    left: -106px;
+    top: 88px;
+    width: 56px;
+}
+.games-letters ul{
+    width: 100%;
+    grid-gap: 4px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.games-letters ul li{
+    width: 26px;
+    height: 26px;
+}
+.games-letters ul li a{
+    width: 26px;
+    height: 26px;
+    background: #032F56;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.games-letters ul li a:hover{
+    background: rgba(3,47,86,0.7);
+}
+.games-letters ul + ul{
+    display: none;
+}
+.catalog-letters__block{
+    margin-top: 10px;
+}
+.catalog-games__href ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.catalog-games__href ul li{
+    width: 25%;
+    margin-bottom: 40px;
+}
+.catalog-games__href ul li a:first-child{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #2D3032;
+    margin-bottom: 5px;
+    text-decoration-line: unset;
+    display: block;
+}
+.catalog-games__href ul li a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #7EBBF3;
+    transition: 0.3s;
+}
+.catalog-games__href ul li a:hover{
+    text-decoration-line: unset;
+}
+.catalog-games__href + .catalog-games__href{
+    padding-top: 35px;
+}
+.catalog--games__let{
+    width: 50px;
+    height: 50px;
+    background: #087EEA;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.catalog--games__let strong{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+@media (max-width: 1599px){
+    .games-letters {
+        left: -67px;
+    }
+}
+@media (max-width: 1439px){
+
+    .games-letters {
+        left: 0;
+        position: relative;
+        width: 100%;
+        top: 0;
+        margin-top: 30px;
+    }
+    .games-letters ul + ul {
+        display: flex;
+        margin-top: 30px;
+    }
+    .catalog-letters__block {
+        margin-top: 0;
+        margin-left: 20px;
+        width: 90%;
+
+    }
+    .catalog-games__flex{
+        margin-top: 30px;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 1299px){
+    .catalog__href{
+        overflow-x: scroll;
+        padding-bottom: 15px;
+    }
+    .catalog__href ul {
+        width: 1200px;
+    }
+}
+@media (max-width: 991px){
+    .catalog-games__flex {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .games-letters {
+        width: 100%;
+    }
+    .catalog-letters__block {
+        margin-top: 30px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .catalog-games__href ul li {
+        width: 33%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 700px){
+    .catalog-games__href ul li {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 570px){
+    .catalog__main {
+        margin: 30px 0 40px;
+    }
+    .catalog-games__tit {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .catalog__main .btn-score {
+        margin-top: 20px;
+    }
+    .catalog-games__href ul li {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+}

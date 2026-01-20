@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="javascript:;" data-val="modal" class="open_modal become-partner">Сообщить о нарушении</a>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-registration">
+            <div class="close"></div>
+            <h2>Сообщить о нарушении</h2>
+            <form>
+                <div class="embedding__inp">
+                    <p>Ваше имя</p>
+                    <label>
+                        <input type="text" placeholder="Введите имя">
+                    </label>
+                </div>
+                <div class="embedding__inp">
+                    <p>Ваш  e-mail</p>
+                    <label>
+                        <input type="text" placeholder="Введите email">
+                    </label>
+                </div>
+                <div class="embedding__inp">
+                    <p>Нарушение</p>
+                    <label>
+                        <textarea placeholder="Текст нарущения"></textarea>
+                    </label>
+                </div>
+                <label class="checkcontainer">
+                    Даю согласие на обработку персональных данных
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <button class="become-partner">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<a href="javascript:;" data-val="order" class="open_modal become-partner">Предзаказ</a>
+<div id="order" class="modal">
+    <div class="modal-content">
+        <div class="modal-registration">
+            <div class="close"></div>
+            <h2>Предзаказ</h2>
+            <form>
+                <div class="embedding__inp">
+                    <p>Ваше имя</p>
+                    <label>
+                        <input type="text" placeholder="Введите имя">
+                    </label>
+                </div>
+
+                <div class="embedding__inp">
+                    <p>Выберите способ связи</p>
+                    <div class="inst-sell__fl">
+                        <label class="check-radio">
+                            Телеграмм
+                            <input type="radio" name="rad" checked>
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="check-radio">
+                            Whatsapp
+                            <input type="radio" name="rad">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="check-radio">
+                            Телефон
+                            <input type="radio" name="rad">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="check-radio">
+                            Email
+                            <input type="radio" name="rad">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <label>
+                        <input type="text" placeholder="Введите ваш номер Whatsapp" pattern="\+7 \(\d{3}\)-\d{3}-\d{2}-\d{2}"
+                               class="phone">
+                    </label>
+                </div>
+                <label class="checkcontainer">
+                    Даю согласие на обработку персональных данных
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <button class="become-partner">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<a href="javascript:;" data-val="application" class="open_modal become-partner">Спасибо за заявку</a>
+<div id="application" class="modal">
+    <div class="modal-content">
+        <div class="modal-registration">
+            <div class="close"></div>
+            <h2>Спасибо за заявку</h2>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.mask.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
